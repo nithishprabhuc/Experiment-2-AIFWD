@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concert Event Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🎵 CONCERT EVENT REGISTRATION</h1>
+    <p>"Feel the Music, Live the Moment"</p>
+</header>
+
+<div class="banner">
+    <svg width="100%" height="300" style="background:linear-gradient(135deg,#9d0208,#ffd60a);">
+        <text x="50%" y="40%" text-anchor="middle" dy=".3em" font-size="48" font-weight="bold" fill="white" font-family="Arial">LIVE CONCERT</text>
+        <text x="50%" y="55%" text-anchor="middle" dy=".3em" font-size="24" fill="white" font-family="Arial">Music Festival 2026</text>
+        <ellipse cx="30%" cy="25%" rx="50" ry="60" fill="none" stroke="white" stroke-width="3"/>
+        <circle cx="70%" cy="75%" r="45" fill="none" stroke="white" stroke-width="3"/>
+    </svg>
+</div>
+
+<main>
+    <section>
+        <h2>Event Preview</h2>
+        <h3>Festival Highlights</h3>
+        <div class="media-box">
+                <video controls poster="video-poster.jpg">
+                    <source src="highlights.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+
+        <h3>Ambient Music</h3>
+       <div class="media-box">
+                <audio controls>
+                    <source src="anthem.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+                <small style="color:#999;display:block;margin-top:8px;">Experience the festival ambiance</small>
+            </div>
+    </section>
+
+    <section style="margin-top:40px;">
+        <h2>Ticket Registration</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="ticket">Ticket Type *</label>
+                    <select id="ticket" name="ticket" required>
+                        <option value="">Select Ticket</option>
+                        <option value="general">General Admission</option>
+                        <option value="vip">VIP Package</option>
+                        <option value="backstage">Backstage Access</option>
+                        <option value="vip-camping">VIP Camping</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Genre Preference *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="genre" value="rock" required> Rock</label>
+                    <label><input type="radio" name="genre" value="pop"> Pop</label>
+                    <label><input type="radio" name="genre" value="edm"> EDM</label>
+                    <label><input type="radio" name="genre" value="indie"> Indie</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="special">Special Requests</label>
+                <textarea id="special" name="special" placeholder="Any dietary or accessibility needs..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Upload ID</label>
+                <input type="file" id="file" name="file" accept=".pdf,.jpg,.png">
+            </div>
+
+            <button type="submit" class="btn">Book Tickets Now</button>
+        </form>
+    </section>
+</main>
+
+<footer>&copy; 2024 Concert Event Registration Portal - Experiment 2: CSS3 & Flexbox</footer>
+
+</body>
+</html>
